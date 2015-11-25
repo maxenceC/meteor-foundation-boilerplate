@@ -1,0 +1,17 @@
+<template name="_header">
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text">Meteor Foundation v6 boilerplate</li>
+                <li class="{{ isActiveRoute regex='home' }}"><a href="{{ pathFor 'home' }}"> Home</a></li>
+                <li class="{{ isActiveRoute regex='dashboard' }}"><a href="{{ pathFor 'dashboard' }}"> Dashboard</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="{{ pathFor 'atSignIn' }}" class="btn btn-default navbar-btn">Sign in</a></li>
+                <li><a href="{{ pathFor 'atSignUp' }}" class="btn btn-primary navbar-btn">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</template>

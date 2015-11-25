@@ -1,0 +1,33 @@
+<template name="dashboard">
+    <div class="template-dashboard">
+
+        <div class="row">
+            <div class="small-9 columns small-centered">
+
+
+                {{#each eventsCard}}
+                    <article class="event">
+
+                        <div class="event-date">
+                            <p class="event-month">{{ month }}</p>
+
+                            <p class="event-day">{{ day }}</p>
+                        </div>
+
+                        <div class="event-desc">
+                            <h4 class="event-desc-header">{{ description }}</h4>
+
+                            <p class="event-desc-detail"><span class="event-desc-time"></span>{{ place }}</p>
+                            <a href="http://bdconf.com/speakers/brandon-arnold/" class="rsvp button">RSVP</a>
+                        </div>
+
+                    </article>
+                {{/each}}
+
+                <hr>
+            </div>
+        </div>
+
+
+    </div>
+</template>
